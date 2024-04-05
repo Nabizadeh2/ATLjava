@@ -4,11 +4,6 @@ import java.util.Scanner;
 
 public class Task5Cls {
     public static void main(String[] args) {
-
-        //Tərəflərinin uzunluğu verilmiş üçbucağın növünü müəyyənləşdirməli
-        // (bərabərtərəfli, bərabəryanlı, müxtəliftərəfli).
-
-
         Scanner scanner= new Scanner(System.in);
         int a= scanner.nextInt();
         int b= scanner.nextInt();

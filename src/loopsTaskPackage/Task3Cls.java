@@ -9,9 +9,9 @@ public class Task3Cls {
         int a= scanner.nextInt();
         int b= scanner.nextInt();
        if (x>=a && x<=b){
-           System.out.println("Yes");
+           System.out.println("YES");
         }else{
-           System.out.println("No");
+           System.out.println("NO");
        }
     }
 }

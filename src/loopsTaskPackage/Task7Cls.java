@@ -7,12 +7,9 @@ public class Task7Cls {
         Scanner scanner=new Scanner(System.in);
         int a= scanner.nextInt();
 
-        if (a>0){
-            System.out.println("Positive");
-        }else if (a<0){
-            System.out.println("Negative ");
-        }else {
-            System.out.println("number is zero");
-        }
+        if (a>0) System.out.println("Positive");
+        else if (a<0)System.out.println("Negative ");
+        else System.out.println("number is zero");
+
     }
 }

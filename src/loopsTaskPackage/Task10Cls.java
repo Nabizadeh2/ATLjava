@@ -8,7 +8,7 @@ public class Task10Cls {
         int n= scanner.nextInt();
         int m= scanner.nextInt();
         int netice=n*m;
-        System.out.println(netice);
+
         for (int i = 0; i < n; i++) {
 
             for (int j = 0; j < m; j++) {

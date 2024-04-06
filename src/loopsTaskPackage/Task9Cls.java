@@ -8,11 +8,16 @@ public class Task9Cls {
         int a= scanner.nextInt();
         int x= scanner.nextInt();
         int b= scanner.nextInt();
+        for (int i = 0; i < 1000000000; i++) {
 
-        if (x<a || x>b){
-            System.out.println("Out");
-        }else {
-            System.out.println("In");
+        }
+
+            if (x < a || x > b) {
+                System.out.println("IN");
+            } else {
+                System.out.println("OUT");
+
+
         }
 
     }

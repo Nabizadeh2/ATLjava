@@ -9,7 +9,7 @@ public class Task11Cls {
         int n= eded /10;
         int m= eded%10;
         int result = n+m;
-        System.out.println(result);
+
         int quvvet =2;
         int netice =1;
         for (int i = 1; i<=quvvet ; i++ ) {

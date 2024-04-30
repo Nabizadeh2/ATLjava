@@ -20,16 +20,17 @@ public class ArrayCls2 {
         for (i = 0; i < arr.length; i++) {
             if (min == arr[i]) {
                 max = arr[i];
-            }if (max== arr[i]) {
-                min = arr[i];
-            }else if (max== arr[i]) {
-                min = arr[i];
             }
+            if (max == arr[i]) {
+                min = arr[i];
+            } else if (max == arr[i]) {
+
+            min = arr[i];
         }
+    }
         System.out.println(max);
         System.out.println(min);
 
 
-
-    }
+}
 }

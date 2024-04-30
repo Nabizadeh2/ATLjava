@@ -20,7 +20,7 @@ public class Manager extends Employe {
     }
     @Override
     public int calculateSalary() {
-        return BASE_SALARY + MANAGEMENT_PAYMENT;
+        return  BASE_SALARY + MANAGEMENT_PAYMENT;
     }
     @Override
     public void work() {

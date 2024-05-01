@@ -46,17 +46,14 @@ public class Book implements IBook{
        if (status==BookStatus.AVAILABLE){
           status = BookStatus.BORROWED;
        }else {
-           throw new CustomException("Bele bir kitab yoxdur");
+           throw new CustomException("Bele bir kitab var");
        }
     }
 
     @Override
     public void returunBook() throws CustomException {
-        if (status==BookStatus.BORROWED){
-            status=BookStatus.AVAILABLE;
-        }else {
-            throw  new CustomException("kitab hazirda movcuddur");
-        }
+      status=BookStatus.AVAILABLE;
+        System.out.println("Bu kitab yoxdur");
     }
 
 

@@ -1,10 +1,8 @@
-package lesson25;
+package Lesson27;
 
 public class CustomException extends Exception{
 
     public CustomException(String message) {
         super(message);
     }
-
-
 }

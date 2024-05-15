@@ -11,12 +11,12 @@ public class Kvadrat implements Shape {
 
     @Override
     public void perimetr() {
-        System.out.println(4 * this.teref1);
+        System.out.println("Kvadratin perimetri "+(4 * this.teref1));
     }
 
     @Override
     public void sahe() {
-        System.out.println(this.teref1 * this.teref1);
+        System.out.println("Kvadratin sahesi  "+ (this.teref1 * this.teref1));
     }
 
 

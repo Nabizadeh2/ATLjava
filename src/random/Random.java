@@ -28,4 +28,7 @@ public class Random {
 
 
     }
+
+    public void nextBytes(byte[] bytes) {
+    }
 }

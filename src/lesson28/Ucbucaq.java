@@ -17,12 +17,12 @@ public class Ucbucaq implements Shape {
 
     @Override
     public void perimetr() {
-        System.out.println(this.teref1 + this.teref2 + this.teref3);
+        System.out.println( "Ucbucagin perimetri  "+ (this.teref1 + this.teref2 + this.teref3));
     }
 
     @Override
     public void sahe() {
-        System.out.println((this.teref1 + this.teref2 + this.teref3) / 2);
+        System.out.println(("Ucbucagin sahesi  "+ (this.teref1 + this.teref2 + this.teref3) / 2));
     }
 
     @Override

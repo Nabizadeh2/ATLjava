@@ -13,5 +13,6 @@ public class Main {
         ucbucaq.sahe();
         kvadrat.sahe();
         kvadrat.perimetr();
+          
     }
 }

@@ -1,5 +1,7 @@
 package lesson36;
 
+import lesson36.resource.Person;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +42,7 @@ public class PersonFile {
                 System.out.println(person1);
             }
         } catch (IOException e) {
-            e.getMessage();
+            throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

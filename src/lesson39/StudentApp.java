@@ -26,12 +26,7 @@ public class StudentApp {
         System.out.println(Arrays.toString(students));
 
         System.out.println("===================");
-         Arrays.sort(students, new Comparator<Student>() {
-             @Override
-             public int compare(Student s1, Student s2) {
-                 return Integer.compare(s1.getAge(),s2.getAge());
-             }
-         });
+         Arrays.sort(students, (s1, s2) -> Integer.compare(s1.getAge(),s2.getAge()));
 
         System.out.println(Arrays.toString(students));
     }

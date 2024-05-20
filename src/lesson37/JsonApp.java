@@ -5,9 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.imageio.IIOException;
 import java.io.IOException;
+import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 
 public class JsonApp {
@@ -20,8 +22,12 @@ public class JsonApp {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             personJson = objectMapper.writeValueAsString(personCls);
+            byte[] jsonBytes = objectMapper.writeValueAsBytes(personJson);
 
+            Files.write(PATH, jsonBytes);
         }catch (JsonProcessingException e ){
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
         System.out.println(personJson);
@@ -35,8 +41,9 @@ public class JsonApp {
             e.printStackTrace();
         }
         try {
-            List<String >strings=Files.readAllLines(PATH);
-            System.out.println(strings);
+            byte[] bytes = Files.readAllBytes(PATH);
+            System.out.println(Arrays.toString(bytes));
+
         }catch (IOException e){
             e.printStackTrace();
         }

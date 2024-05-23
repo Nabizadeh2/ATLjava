@@ -1,20 +1,33 @@
 1
-SELECT * FROM Employees;
+SELECT *
+ FROM Employees;
 2
-SELECT Name, Email FROM Customers;
+SELECT Name, Email
+FROM Customers;
 3
-SELECT * FROM Orders WHERE Status = 'Completed';
+SELECT * FROM
+Orders
+WHERE Status = 'Completed';
 4
-SELECT Name, Price FROM Products WHERE Category = 'Electronics';
+SELECT Name, Price
+FROM Products
+WHERE Category = 'Electronics';
 5
-SELECT SUM(Revenue) AS TotalRevenue FROM Sales GROUP BY SaleID;
+SELECT
+ SUM(Revenue) AS TotalRevenue
+ FROM Sales GROUP BY SaleID;
 6
-SELECT ProductID, SUM(Quantity) AS TotalQuantity FROM Inventory GROUP BY ProductID;
+SELECT ProductID, SUM(Quantity) AS TotalQuantity
+FROM Inventory GROUP BY ProductID;
 
 7
-SELECT FirstName, LastName FROM Employees WHERE Position = 'Manager';
+SELECT (FirstName, ' ',LastName) as FullName
+ FROM Employees
+ WHERE Position = 'Manager';
 8
-SELECT * FROM Orders WHERE CustomerID = 2;
+SELECT *
+ FROM Orders
+ WHERE CustomerID = 2;
 9
 SELECT p.*, s.Quantity
 FROM Products p

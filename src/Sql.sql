@@ -143,14 +143,14 @@ INSERT INTO FemaleStudents (Name) VALUES
                                       ('Emma');
 
 SELECT Name FROM MaleStudents
-UNION
+UNION //hamisini getirir amma eyni olanmlardan  sadece birini getiri
 SELECT Name FROM FemaleStudents;
 
 
 SELECT Name FROM MaleStudents
-INTERSECT
+INTERSECT //kesiwenleri getirir
 SELECT Name FROM FemaleStudents;
 
 SELECT Name FROM MaleStudents
-EXCEPT
+EXCEPT //ortaq olmayanlari getirir
 SELECT Name FROM FemaleStudents;
